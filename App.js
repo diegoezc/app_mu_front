@@ -39,8 +39,8 @@ export  function SvgTop(){
 export default function App() {
  
   return (
-    <View style={tw`flex flex-col items-center`}>
-    <View style={tw`flex-1`}>
+    <View >
+    <View style={tw`w-[${width}px] p-0 m-0 `}>
         <SvgTop/>
     </View>
     <View>
@@ -60,6 +60,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
 
-});
