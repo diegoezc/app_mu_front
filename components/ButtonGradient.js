@@ -12,7 +12,7 @@ export default function ButtonGradient() {
         start={{x:0, y:0}}
         end={{x:1, y:0}}
         style={styles.button}>
-        <Text style={styles.text}>Sign in with Facebook</Text>
+        <Text style={styles.text}>Iniciar Sesion</Text>
       </LinearGradient>
     </Pressable>
   );
@@ -20,6 +20,7 @@ export default function ButtonGradient() {
 
 const styles = StyleSheet.create({
   button: {
+    marginTop: '15px',
     padding: 15,
     alignItems: 'center',
     borderRadius: 50,
