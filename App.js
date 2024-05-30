@@ -17,10 +17,18 @@ export default function App() {
           name="LoginScreen"
           component={LoginScreen}
 
-          options={{statusBarColor:"#7ACFFF", title:"Login",headerStyle:{backgroundColor:"#7ACFFF"},
+          options={{statusBarColor:"#25B201", title:"",headerStyle:{backgroundColor:"#25B201"},
         headerTintColor: "#fff",
         headerTitleAlign:"center",
-              headerShadowVisible: false,
+        headerShadowVisible: false,
+        headerRight: () => (
+          <View>
+            <Image
+          style={{width: 50, height: 50, marginRight: 10}}
+          source={require('./assets/vaca-logo.png')} 
+          ></Image>
+          </View>
+          )
         }}
         />
       </Drawer.Navigator>

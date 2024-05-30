@@ -9,8 +9,8 @@ export default function LoginScreen() {
  
   return (
     <View style={tw`flex justify-center items-center`}>
-    <View style={tw`w-full items-center pb-7 bg-[#7ACFFF] rounded-br-[3rem]`}>
-        <Text style={tw`text-black  text-7xl  font-bold mt-3`}>Login</Text>
+    <View style={tw`w-full items-center pb-7 bg-[#25B201] rounded-br-[3rem]`}>
+        <Text style={tw`text-black  text-7xl  font-bold mt-3 text-white`}>Login</Text>
     </View>
           
           <Text style={tw`text-black text-base mt-2 text-gray-600`}>Sing in to your account</Text>
