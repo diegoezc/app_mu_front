@@ -11,7 +11,7 @@ export default function ButtonGradient() {
         colors={['#25B201', '#B2B600']}
         start={{x:0, y:0}}
         end={{x:1, y:0}}
-        style={tw`mt-2 p-3 items-center rounded-lg`}>
+        style={tw`items-center rounded-lg border-0 m-none`}>
         <Text style={tw`bg-transparent	text-lg text-[#fff]`}>Iniciar Sesion2</Text>
       </LinearGradient>
     </Pressable>
