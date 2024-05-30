@@ -16,9 +16,11 @@ export default function App() {
         <Drawer.Screen
           name="LoginScreen"
           component={LoginScreen}
+
           options={{statusBarColor:"#7ACFFF", title:"Login",headerStyle:{backgroundColor:"#7ACFFF"},
         headerTintColor: "#fff",
         headerTitleAlign:"center",
+              headerShadowVisible: false,
         }}
         />
       </Drawer.Navigator>
