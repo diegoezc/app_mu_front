@@ -24,7 +24,7 @@ export default function App() {
         headerRight: () => (
           <View>
             <Image
-          style={{width: 50, height: 50, marginRight: 10}}
+          style={{width: 50, height: 50, marginRight: 170}}
           source={require('./assets/vaca-logo.png')} 
           ></Image>
           </View>
