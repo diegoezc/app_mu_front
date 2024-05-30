@@ -11,23 +11,10 @@ export default function ButtonGradient() {
         colors={['#25B201', '#B2B600']}
         start={{x:0, y:0}}
         end={{x:1, y:0}}
-        style={styles.button}>
-        <Text style={styles.text}>Iniciar Sesion</Text>
+        style={tw`mt-2 p-3 items-center rounded-lg`}>
+        <Text style={tw`bg-transparent	text-lg text-[#fff]`}>Iniciar Sesion2</Text>
       </LinearGradient>
     </Pressable>
   );
 }
 
-const styles = StyleSheet.create({
-  button: {
-    marginTop: '15px',
-    padding: 15,
-    alignItems: 'center',
-    borderRadius: 50,
-  },
-  text: {
-    backgroundColor: 'transparent',
-    fontSize: 15,
-    color: '#fff',
-  },
-});

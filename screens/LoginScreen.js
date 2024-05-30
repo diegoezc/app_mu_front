@@ -9,12 +9,6 @@ export default function LoginScreen() {
  
   return (
     <View >
-    <View>
-        <Image 
-          source={require('../assets/Rectangle_figma.svg')}
-          style={{width:width, height:380}}
-        />
-    </View>
     <View style={tw`flex justify-center items-center`}>
         
           <Text style={tw`text-black  text-7xl  font-bold mt-3`}>Hello</Text>
