@@ -16,7 +16,9 @@ export const CustomTable = ({rows,columns})=>{
 
                         {
                             row.item && row.item.map((item,index)=>{
-                                <DataTable.Cell key={index}>{item}</DataTable.Cell>
+                                return (
+                                    <DataTable.Cell key={index}>{item}</DataTable.Cell>
+                                )
 
                             })
                         }

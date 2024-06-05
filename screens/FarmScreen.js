@@ -16,16 +16,24 @@ export default function FarmScreen() {
             'columna 2'
         ],
         rows:[
-            [{
-              item:'info 1'
+            {
+              item:[
+                  'gfdg','fdsfds'
+              ]
             }, {
-            item:'info 2'
-            }],
-            [{
-                item:'info 1'
+            item:[
+                'gfdg','fdsfds'
+            ]
+            },
+            {
+                item:[
+                    'gfdg','fdsfds'
+                ]
             }, {
-                item:'info 2'
-            }]
+                item:[
+                    'gfdg','fdsfds'
+                ]
+            }
         ]
     }),[])
   return (
