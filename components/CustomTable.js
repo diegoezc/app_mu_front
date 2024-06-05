@@ -13,8 +13,7 @@ export const CustomTable = ({rows,columns})=>{
             {
                 rows && rows.map((row,index)=>(
                     <DataTable.Row  onPress={()=> console.log('hola')}>
-                        <DataTable.Cell>Radhika</DataTable.Cell>
-                        <DataTable.Cell>23</DataTable.Cell>
+
                         {
                             row.item && row.item.map((item,index)=>{
                                 <DataTable.Cell key={index}>{item}</DataTable.Cell>
