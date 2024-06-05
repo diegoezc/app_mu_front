@@ -6,9 +6,28 @@ import { Table, TableWrapper, Row, Rows } from 'react-native-table-component';
 import tw, { style } from 'twrnc';
 import ButtonGradient from '../components/ButtonGradient';
 import { useMemo } from 'react';
+import {CustomTable} from "../components/CustomTable";
 const {width, height} = Dimensions.get('screen')
 
 export default function FarmScreen() {
+    const data = useMemo(()=>({
+        columns:[
+            'columna 1',
+            'columna 2'
+        ],
+        rows:[
+            [{
+              item:'info 1'
+            }, {
+            item:'info 2'
+            }],
+            [{
+                item:'info 1'
+            }, {
+                item:'info 2'
+            }]
+        ]
+    }),[])
   return (
     <View>
         <View style={tw`w-full flex justify-center items-center h-45 bg-[#25B201] `}>
@@ -22,34 +41,8 @@ export default function FarmScreen() {
         }
         ></Image>
         </View>
-    <DataTable style={styles.container}> 
-      <DataTable.Header style={styles.tableHeader}> 
-        <DataTable.Title>Name</DataTable.Title> 
-        <DataTable.Title>Favourite Food</DataTable.Title> 
-        <DataTable.Title>Age</DataTable.Title> 
-      </DataTable.Header> 
-      <DataTable.Row  onPress={()=> console.log('hola')}> 
-        <DataTable.Cell>Radhika</DataTable.Cell> 
-        <DataTable.Cell>Dosa</DataTable.Cell> 
-        <DataTable.Cell>23</DataTable.Cell> 
-      </DataTable.Row> 
-  
-      <DataTable.Row onPress={()=> console.log('hola')}> 
-        <DataTable.Cell>Krishna</DataTable.Cell> 
-        <DataTable.Cell>Uttapam</DataTable.Cell> 
-        <DataTable.Cell>26</DataTable.Cell> 
-      </DataTable.Row> 
-      <DataTable.Row onPress={()=> console.log('hola')}> 
-        <DataTable.Cell>Vanshika</DataTable.Cell> 
-        <DataTable.Cell>Brownie</DataTable.Cell> 
-        <DataTable.Cell>20</DataTable.Cell> 
-      </DataTable.Row> 
-      <DataTable.Row onPress={()=> console.log('hola')}> 
-        <DataTable.Cell>Teena</DataTable.Cell> 
-        <DataTable.Cell>Pizza</DataTable.Cell> 
-        <DataTable.Cell>24</DataTable.Cell> 
-      </DataTable.Row> 
-    </DataTable> 
+        <CustomTable columns={data.columns} rows={data.rows}/>
+
     </View>
   );
 }
